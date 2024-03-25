@@ -1,4 +1,4 @@
-# PageRank Algorithm Implementation
+# PageRank Algorithm Implementation (COMP 5130 Term Project, Auburn University)
 Data Source: https://snap.stanford.edu/data/web-Google.html (Stanford University, Web Graph - Google Dataset)
 ### Steps for Using:
 - Clone or download repository
