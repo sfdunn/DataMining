@@ -8,7 +8,45 @@ def load_adjacency_list():
     adjacency_list = {int(k): v for k, v in adjacency_list.items()}
     return adjacency_list
 
+#Real Data Set
 adjacency_list = load_adjacency_list()
+
+#Test Data Set
+'''
+adjacency_list = {
+    "0": ['4'],
+    "1": ['0'],
+    "2": ['1'],
+    "3": ['2'],
+    "4": ['3']
+}
+#'''
+'''
+ranks_should_be = {
+    "0": 0.2,
+    "1": 0.2,
+    "2": 0.2, 
+    "3": 0.2, 
+    "4": 0.2
+}
+#'''
+'''
+adjacency_list = {
+    "0": ['1'],
+    "1": ['0','2'],
+    "2": ['1','3'],
+    "3": ['2']
+}
+#'''
+'''
+ranks_should_be = {
+    "0": 0.2,
+    "1": 0.2,
+    "2": 0.2, 
+    "3": 0.2, 
+    "4": 0.2
+}
+#'''
 
 def page_rank(adjacency_list, damping_factor=0.85, max_iterations=100, convergence_threshold=1e-6):
     num_nodes = len(adjacency_list)
